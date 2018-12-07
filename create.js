@@ -118,7 +118,7 @@ module.exports = function(api, opts, env) {
       // don't work without it: https://github.com/babel/babel/issues/7215
       require('@babel/plugin-transform-destructuring').default,
       // Turn on legacy decorators for TypeScript files
-      
+      require('@babel/plugin-proposal-async-generator-functions').default,
       [
         require('@babel/plugin-proposal-decorators').default,
         {
